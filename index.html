@@ -1,0 +1,448 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>BugPilot AI - AI Website Testing and UX Audits</title>
+  <meta name="description" content="BugPilot AI scans websites for UI bugs, broken flows, mobile issues, accessibility gaps, and conversion blockers.">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700;800&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+  <div class="site-bg" aria-hidden="true"></div>
+
+  <header class="glass-navbar">
+    <nav class="nav shell" aria-label="Primary navigation">
+      <a href="#top" class="brand" aria-label="BugPilot AI home">
+        <span class="brand-logo">
+          <img src="assets/bugpilot-icon.png" alt="" onerror="this.style.display='none'; this.nextElementSibling.style.display='grid';">
+          <span class="brand-fallback" aria-hidden="true">BP</span>
+        </span>
+        <span>BugPilot AI</span>
+      </a>
+
+      <button class="menu-toggle" type="button" aria-expanded="false" aria-controls="nav-links">
+        <span></span>
+        <span></span>
+        <span></span>
+      </button>
+
+      <div class="nav-links" id="nav-links">
+        <a href="#features">Features</a>
+        <a href="#workflow">Workflow</a>
+        <a href="#partners">Partners</a>
+        <a href="#pricing">Pricing</a>
+        <a href="#faq">FAQ</a>
+      </div>
+
+      <a class="btn btn-primary nav-cta" href="#top">Start Free Scan</a>
+    </nav>
+  </header>
+
+  <main id="top">
+    <section class="hero section">
+      <div class="shell hero-grid">
+        <div class="hero-copy">
+          <div class="pill-row">
+            <span class="status-pill"><span class="dot dot-live"></span>Live AI Scan</span>
+            <span class="status-pill">UX Audit</span>
+            <span class="status-pill">Mobile Check</span>
+            <span class="status-pill">Accessibility Report</span>
+          </div>
+          <h1>Find website bugs before your users do.</h1>
+          <p class="hero-subtext">BugPilot AI scans your website for UI issues, broken flows, mobile problems, accessibility gaps, and conversion blockers in minutes.</p>
+          <form class="scan-form glass-card" aria-label="Demo website scan form">
+            <input type="url" placeholder="Enter your website URL" aria-label="Enter your website URL">
+            <button class="btn btn-primary" type="submit">Start Free Scan</button>
+          </form>
+          <p class="scan-note">Demo scan only &mdash; sample project <span class="scan-message" role="status" aria-live="polite"></span></p>
+         <div class="hero-actions">
+  <a class="btn btn-secondary" href="#dashboard-preview">View Sample Report</a>
+  <a class="btn btn-secondary" href="#pricing">See Pricing</a>
+</div>
+          <div class="trust-row" aria-label="Audit highlights">
+            <span><strong>2 min</strong> report generation</span>
+            <span><strong>6</strong> audit categories</span>
+            <span><strong>24/7</strong> flow monitoring</span>
+          </div>
+        </div>
+
+        <div class="dashboard-shell glass-panel subtle-glow" id="dashboard-preview" aria-label="Sample BugPilot AI scan dashboard">
+          <div class="scan-line" aria-hidden="true"></div>
+          <div class="dashboard-topbar">
+            <div>
+              <span class="eyebrow">Website Audit</span>
+              <h2>app.launchsite.io</h2>
+            </div>
+            <span class="scan-badge"><span class="dot dot-live"></span>Scan Complete</span>
+          </div>
+
+          <div class="dashboard-grid">
+            <article class="metric-card score-card">
+              <span class="metric-label">Website Score</span>
+              <div class="score-ring" style="--score: 82">
+                <span>82</span>
+                <small>/100</small>
+              </div>
+              <p>Strong foundation with 19 actionable fixes.</p>
+            </article>
+
+            <article class="metric-card danger">
+              <span class="metric-label">Critical Issues</span>
+              <strong>4</strong>
+              <div class="bar"><span style="width: 32%"></span></div>
+              <small>Broken checkout CTA, form validation, dead button</small>
+            </article>
+
+            <article class="metric-card warning">
+              <span class="metric-label">Mobile Issues</span>
+              <strong>9</strong>
+              <div class="bar"><span style="width: 61%"></span></div>
+              <small>Overflow, tap targets, sticky header overlap</small>
+            </article>
+
+            <article class="metric-card warning">
+              <span class="metric-label">Accessibility Warnings</span>
+              <strong>6</strong>
+              <div class="bar"><span style="width: 48%"></span></div>
+              <small>Contrast, missing labels, focus state gaps</small>
+            </article>
+
+            <article class="metric-card success">
+              <span class="metric-label">CTA Clarity</span>
+              <strong>Good</strong>
+              <div class="bar"><span style="width: 76%"></span></div>
+              <small>Primary action is visible above the fold</small>
+            </article>
+          </div>
+
+          <div class="report-panel">
+            <div class="report-head">
+              <span class="metric-label">Report Generated</span>
+              <strong>2 min ago</strong>
+            </div>
+            <div class="severity-list">
+              <div><span class="severity critical">Critical</span><p>Signup modal close button hidden on iPhone viewport.</p></div>
+              <div><span class="severity warn">Warning</span><p>Pricing comparison scrolls horizontally on tablets.</p></div>
+              <div><span class="severity passed">Passed</span><p>Homepage navigation keyboard focus is visible.</p></div>
+            </div>
+            <div class="mini-chart" aria-hidden="true">
+              <span style="height: 42%"></span>
+              <span style="height: 64%"></span>
+              <span style="height: 36%"></span>
+              <span style="height: 78%"></span>
+              <span style="height: 52%"></span>
+              <span style="height: 88%"></span>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <section class="partner-strip reveal" aria-labelledby="partner-strip-title">
+      <div class="shell">
+        <div class="partner-strip-head">
+          <div>
+            <span class="eyebrow">Sample Workflows</span>
+            <h2 id="partner-strip-title">Built for product teams, agencies, and startup founders</h2>
+          </div>
+          <p>(fictional sample partners)</p>
+        </div>
+        <div class="partner-logo-row">
+          <a class="partner-logo text-logo reveal" href="#partners" aria-label="LaunchSite fictional sample partner">
+  LaunchSite
+</a>
+          <a class="partner-logo reveal" href="#partners" aria-label="PixelForge fictional sample partner">
+            <img src="assets/logos/pixelforge.png" alt="PixelForge fictional sample partner logo">
+          </a>
+          <a class="partner-logo reveal" href="#partners" aria-label="CloudNest fictional sample partner">
+            <img src="assets/logos/cloudnest.png" alt="CloudNest fictional sample partner logo">
+          </a>
+          <a class="partner-logo reveal" href="#partners" aria-label="ShipFlow fictional sample partner">
+            <img src="assets/logos/shipflow.png" alt="ShipFlow fictional sample partner logo">
+          </a>
+          <a class="partner-logo reveal" href="#partners" aria-label="PageLab fictional sample partner">
+            <img src="assets/logos/pagelab.png" alt="PageLab fictional sample partner logo">
+          </a>
+        </div>
+      </div>
+    </section>
+
+    <section class="section problem-section">
+      <div class="shell">
+        <div class="section-heading">
+          <span class="eyebrow">Why Teams Miss Bugs</span>
+          <h2>Small UX failures quietly drain signups, revenue, and trust.</h2>
+        </div>
+        <div class="pain-grid">
+          <article class="glass-card">
+            <span class="icon-chip">01</span>
+            <h3>Users leave because of confusing UX</h3>
+            <p>BugPilot flags unclear flows, weak CTAs, and decision points that make visitors hesitate.</p>
+          </article>
+          <article class="glass-card">
+            <span class="icon-chip">02</span>
+            <h3>Buttons and forms break silently</h3>
+            <p>Catch dead buttons, validation traps, and broken conversion paths before they reach customers.</p>
+          </article>
+          <article class="glass-card">
+            <span class="icon-chip">03</span>
+            <h3>Mobile layout issues go unnoticed</h3>
+            <p>Spot tap-target problems, content overflow, and layouts that fail on real device sizes.</p>
+          </article>
+          <article class="glass-card">
+            <span class="icon-chip">04</span>
+            <h3>Manual website testing wastes time</h3>
+            <p>Replace scattered checklist reviews with a clear, prioritized audit your team can act on.</p>
+          </article>
+        </div>
+      </div>
+    </section>
+
+    <section class="section" id="workflow">
+      <div class="shell">
+        <div class="section-heading center">
+          <span class="eyebrow">Workflow</span>
+          <h2>From URL to prioritized UX fixes in minutes.</h2>
+        </div>
+        <div class="steps-grid">
+          <article class="step-card glass-card">
+            <span>1</span>
+            <h3>Paste your website URL</h3>
+            <p>Add a homepage, landing page, or full flow you want BugPilot to inspect.</p>
+          </article>
+          <article class="step-card glass-card">
+            <span>2</span>
+            <h3>AI scans pages and user flows</h3>
+            <p>The scanner checks visual states, interactions, mobile layouts, and accessibility signals.</p>
+          </article>
+          <article class="step-card glass-card">
+            <span>3</span>
+            <h3>Get a clear bug and UX report</h3>
+            <p>Each finding includes severity, affected viewport, likely impact, and recommended fix.</p>
+          </article>
+          <article class="step-card glass-card">
+            <span>4</span>
+            <h3>Fix issues faster</h3>
+            <p>Share the report with product, design, QA, or engineering and move straight to remediation.</p>
+          </article>
+        </div>
+      </div>
+    </section>
+
+    <section class="section" id="features">
+      <div class="shell">
+        <div class="section-heading">
+          <span class="eyebrow">Audit Coverage</span>
+          <h2>Every scan focuses on the issues that block users from converting.</h2>
+        </div>
+        <div class="feature-grid">
+          <article class="feature-card glass-card">
+            <h3>AI UI Scan</h3>
+            <p>Detects visual bugs, spacing regressions, missing states, and unclear interface patterns.</p>
+          </article>
+          <article class="feature-card glass-card">
+            <h3>Mobile Responsiveness Check</h3>
+            <p>Tests layouts across common viewport widths for overflow, cramped elements, and hidden CTAs.</p>
+          </article>
+          <article class="feature-card glass-card">
+            <h3>Broken Link/Button Detection</h3>
+            <p>Finds dead links, inactive buttons, failed navigation, and forms that stop users cold.</p>
+          </article>
+          <article class="feature-card glass-card">
+            <h3>Accessibility Review</h3>
+            <p>Highlights missing labels, contrast risks, keyboard traps, and focus visibility issues.</p>
+          </article>
+          <article class="feature-card glass-card">
+            <h3>Conversion Issue Detection</h3>
+            <p>Surfaces weak CTA hierarchy, confusing copy, friction points, and trust gaps.</p>
+          </article>
+          <article class="feature-card glass-card">
+            <h3>Exportable Audit Report</h3>
+            <p>Turns findings into a clean report agencies, founders, and product teams can share.</p>
+          </article>
+        </div>
+      </div>
+    </section>
+
+    <section class="section use-case-section" id="partners">
+      <div class="shell">
+        <div class="section-heading">
+          <span class="eyebrow">Before Launch</span>
+          <h2>How teams use BugPilot AI before launch</h2>
+          <p>(fictional sample partners)</p>
+        </div>
+
+        <div class="use-case-layout">
+          <div class="use-case-visuals">
+            <figure class="photo-card main-photo glass-panel reveal">
+              <img src="assets/teamreviewing.png" alt="Product team reviewing a website audit dashboard together">
+            </figure>
+            <div class="supporting-visuals">
+              <figure class="photo-card dev-photo glass-card reveal">
+                <img src="assets/developertesting.png" alt="Developer testing a website interface before launch">
+              </figure>
+              <article class="testimonial-card glass-card reveal">
+                <span class="testimonial-label">Fictional sample testimonial</span>
+                <p>&ldquo;BugPilot AI turns website QA into a clear checklist our team can actually act on.&rdquo;</p>
+                <div class="testimonial-person">
+                  <img src="assets/ceo.png" alt="Aarav Mehta, fictional product lead at LaunchSite">
+                  <div>
+                    <strong>Aarav Mehta</strong>
+                    <span>Product Lead, LaunchSite</span>
+                  </div>
+                </div>
+              </article>
+            </div>
+          </div>
+
+          <div class="use-case-cards">
+            <article class="use-case-card glass-card reveal">
+              <div class="use-case-text-logo">LaunchSite</div>
+              <h3>LaunchSite</h3>
+              <div class="use-case-point"><span>Problem</span><p>Broken CTAs and unclear above-the-fold messaging before launch.</p></div>
+              <div class="use-case-point"><span>BugPilot fix</span><p>CTA detection, mobile friction checks, and conversion-flow review.</p></div>
+              <div class="use-case-result"><span>Result</span><strong>Cleaner launch flow before going live.</strong></div>
+            </article>
+
+            <article class="use-case-card glass-card reveal">
+              <img src="assets/logos/pixelforge.png" alt="PixelForge fictional sample partner logo">
+              <h3>PixelForge</h3>
+              <div class="use-case-point"><span>Problem</span><p>Manual website audits slowed down client delivery.</p></div>
+              <div class="use-case-point"><span>BugPilot fix</span><p>Exportable audit reports and faster issue prioritization.</p></div>
+              <div class="use-case-result"><span>Result</span><strong>Faster client review cycles.</strong></div>
+            </article>
+
+            <article class="use-case-card glass-card reveal">
+              <img src="assets/logos/cloudnest.png" alt="CloudNest fictional sample partner logo">
+              <h3>CloudNest</h3>
+              <div class="use-case-point"><span>Problem</span><p>Dashboard accessibility gaps and mobile usability issues.</p></div>
+              <div class="use-case-point"><span>BugPilot fix</span><p>Contrast checks, label warnings, and tap-target review.</p></div>
+              <div class="use-case-result"><span>Result</span><strong>More usable product screens across devices.</strong></div>
+            </article>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <section class="section pricing-section" id="pricing">
+      <div class="shell">
+        <div class="section-heading center">
+          <span class="eyebrow">Pricing</span>
+          <h2>Start free, then scale website QA as your team grows.</h2>
+          <p>Ready to turn website issues into a clear action plan?</p>
+        </div>
+        <div class="pricing-grid">
+          <article class="pricing-card glass-card">
+            <h3>Starter</h3>
+            <p class="price">&#8377;0<span>/month</span></p>
+            <p>Limited scan for founders validating one landing page.</p>
+            <ul>
+              <li>1 website scan</li>
+              <li>Basic issue summary</li>
+              <li>Mobile snapshot checks</li>
+            </ul>
+            <a class="btn btn-secondary" href="#final-cta">Start Free Scan</a>
+          </article>
+          <article class="pricing-card glass-card popular">
+            <span class="popular-badge">Most Popular</span>
+            <h3>Pro</h3>
+            <p class="price">&#8377;799<span>/month</span></p>
+            <p>Advanced reports for product teams shipping weekly.</p>
+            <ul>
+              <li>Unlimited page scans</li>
+              <li>Flow and CTA diagnostics</li>
+              <li>Exportable audit reports</li>
+            </ul>
+            <a class="btn btn-primary" href="#final-cta">Choose Pro</a>
+          </article>
+          <article class="pricing-card glass-card">
+            <h3>Agency</h3>
+            <p class="price">&#8377;2,499<span>/month</span></p>
+            <p>Multiple websites and team features for client audits.</p>
+            <ul>
+              <li>Multi-site workspaces</li>
+              <li>Client-ready reports</li>
+              <li>Team review workflows</li>
+            </ul>
+            <a class="btn btn-secondary" href="#final-cta">Talk to Sales</a>
+          </article>
+        </div>
+      </div>
+    </section>
+
+    <section class="section" id="faq">
+      <div class="shell faq-shell">
+        <div class="section-heading">
+          <span class="eyebrow">FAQ</span>
+          <h2>Answers for teams that care about shipping cleaner websites.</h2>
+        </div>
+        <div class="faq-list">
+          <article class="faq-item glass-card">
+            <button type="button" aria-expanded="false">Is there a free trial?<span>+</span></button>
+            <p>Yes. The Starter plan lets you run a limited scan and see how BugPilot structures findings before upgrading.</p>
+          </article>
+          <article class="faq-item glass-card">
+            <button type="button" aria-expanded="false">How accurate are the scans?<span>+</span></button>
+            <p>BugPilot combines automated checks with UX heuristics to prioritize high-confidence issues. Teams should still review critical fixes before release.</p>
+          </article>
+          <article class="faq-item glass-card">
+            <button type="button" aria-expanded="false">Does it test mobile layouts?<span>+</span></button>
+            <p>Yes. Scans include common mobile and tablet viewport checks for overflow, tap targets, sticky UI collisions, and hidden conversion elements.</p>
+          </article>
+          <article class="faq-item glass-card">
+            <button type="button" aria-expanded="false">Can I export reports?<span>+</span></button>
+            <p>Pro and Agency plans include exportable reports designed for internal QA tickets, stakeholder reviews, and client delivery.</p>
+          </article>
+          <article class="faq-item glass-card">
+            <button type="button" aria-expanded="false">Is BugPilot useful for agencies?<span>+</span></button>
+            <p>Yes. Agency includes multi-site organization, client-ready reports, and repeatable audits for launch reviews and retainers.</p>
+          </article>
+          <article class="faq-item glass-card">
+            <button type="button" aria-expanded="false">What about data privacy?<span>+</span></button>
+            <p>BugPilot is designed around public website scans and does not require production database access, user accounts, or sensitive backend credentials.</p>
+          </article>
+        </div>
+      </div>
+    </section>
+
+    <section class="section final-cta" id="final-cta">
+      <div class="shell">
+        <div class="cta-panel glass-panel subtle-glow">
+          <span class="eyebrow">Ready When You Are</span>
+          <h2>Run your first website scan today.</h2>
+          <p>Find broken flows, mobile friction, accessibility gaps, and conversion blockers before your next visitor hits them.</p>
+          <a class="btn btn-primary" href="#top">Start Free Scan</a>
+        </div>
+      </div>
+    </section>
+  </main>
+
+  <footer class="footer">
+    <div class="shell footer-grid">
+      <div>
+        <a href="#top" class="brand footer-brand">
+          <span class="brand-logo">
+            <img src="assets/bugpilot-icon.png" alt="" onerror="this.style.display='none'; this.nextElementSibling.style.display='grid';">
+            <span class="brand-fallback" aria-hidden="true">BP</span>
+          </span>
+          <span>BugPilot AI</span>
+        </a>
+        <p>AI-powered website testing and UX audits for founders, agencies, and product teams.</p>
+      </div>
+      <div class="footer-links">
+        <a href="#features">Features</a>
+        <a href="#workflow">Workflow</a>
+        <a href="#partners">Partners</a>
+        <a href="#pricing">Pricing</a>
+        <a href="#faq">FAQ</a>
+      </div>
+      <p class="copyright">&copy; 2026 BugPilot AI. All rights reserved.</p>
+    </div>
+  </footer>
+
+  <script src="script.js"></script>
+</body>
+</html>

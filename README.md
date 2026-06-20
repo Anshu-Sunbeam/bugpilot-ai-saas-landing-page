@@ -10,7 +10,7 @@ Live Website: `<paste your GitHub Pages link here>`
 
 ## Screenshots
 
-![Hero](assets/screenshots/hero.png)
+![Hero](assets/screenshots/hero.png.png)
 
 
 

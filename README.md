@@ -8,9 +8,6 @@ This project was built as a sample SaaS website design to demonstrate landing pa
 
 Live Website: `<paste your GitHub Pages link here>`
 
-## Screenshots
-
-![Hero](assets/screenshots/hero.png.png)
 
 
 

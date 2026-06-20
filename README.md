@@ -6,8 +6,7 @@ This project was built as a sample SaaS website design to demonstrate landing pa
 
 ## Live Demo
 
-Live Website: `<paste your GitHub Pages link here>`
-
+Live Website: https://anshu-sunbeam.github.io/bugpilot-ai-saas-landing-page/
 
 
 
